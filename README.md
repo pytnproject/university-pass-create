@@ -1,10 +1,8 @@
-Login System Script
+# Login System Script
 
 A simple Python login system that generates a password from the user's student number.
 
-https://img.shields.io/badge/Python-3.x-blue
-
-Usage
+# Usage
 
 ```bash
 python script.py
