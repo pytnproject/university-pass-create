@@ -10,7 +10,9 @@ python script.py
 
 ---
 
-Code - script.py
+# Code 
+
+script.py
 
 ```python
 print("Welcome! Follow the instructions to log in to the system.")
