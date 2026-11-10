@@ -1,5 +1,7 @@
 print("Welcome! Follow the instructions to log in to the system.")
 
+attempts = 4
+
 while True:
     stud_num = input("Enter your student number: ")
     length = len(stud_num)
@@ -15,10 +17,13 @@ while True:
 stud_num = str(stud_num)        
 stud_pass = stud_num[-4:] + "@AHUCM"
 
-while True:
+while attempts != 0:
     password = input("Please enter your password (Hint: last 4 digits of your student number + @AHUCM): ")
     if password != stud_pass:
-        print("Wrong password!")
+        attempts = attempts - 1
+        print(f"Wrong password! Attempts left: {attempts}")
+        if attempts == 0:
+            print("Access denied!")
     else:
         print("Access granted!")
         break    
